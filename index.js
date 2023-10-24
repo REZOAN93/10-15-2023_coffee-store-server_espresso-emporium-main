@@ -86,6 +86,7 @@ async function run() {
       const result = userCollection.insertOne(newUser);
       res.send(result);
       console.log(newUser);
+      console.log(result)
     });
 
     app.get("/users", async (req, res) => {
